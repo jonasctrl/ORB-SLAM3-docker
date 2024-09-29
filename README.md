@@ -2,6 +2,11 @@
 
 This guide will walk you through setting up ORB-SLAM3 in a Docker container, running it with a EuRoC dataset, and testing it with different configurations like Monocular, Monocular-Inertial, and Stereo.
 
+After setting up the Docker container, you can run the ORB-SLAM3 examples with GPU acceleration and X11 forwarding for graphical output that will look like this:
+![alt text](/resources/image.png)
+
+You will also have ability to attach to a running container and compile code using ORB SLAM 3 library. This setup is more for development purposes and testing different configurations of ORB-SLAM3.
+
 ## Prerequisites
 
 - Docker installed
@@ -11,6 +16,12 @@ This guide will walk you through setting up ORB-SLAM3 in a Docker container, run
 ## Getting Started
 
 ### Step 1: Running the Docker Container
+
+First you need to build the Docker image. You can do this by running the following command in the root directory of this repository:
+
+```bash
+docker build -t orb_slam3:latest .
+```
 
 To run the ORB-SLAM3 Docker container with GPU support and X11 forwarding for graphical output:
 
@@ -106,9 +117,10 @@ docker exec -it orb_slam3_container bash
 
 This will open a new shell inside the running container.
 
-### Alternatively:
-
+**Alternatively:**
 You could use vscode to attach to the container, you just need to install the extension "Dev - Containers" and open the project folder in the container.
+
+![alt text](resources/image-ext.png)
 
 If you want to attach to a running container, you can use the following command:
 
