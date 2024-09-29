@@ -3,6 +3,7 @@
 This guide will walk you through setting up ORB-SLAM3 in a Docker container, running it with a EuRoC dataset, and testing it with different configurations like Monocular, Monocular-Inertial, and Stereo.
 
 After setting up the Docker container, you can run the ORB-SLAM3 examples with GPU acceleration and X11 forwarding for graphical output that will look like this:
+
 ![alt text](/resources/image.png)
 
 You will also have ability to attach to a running container and compile code using ORB SLAM 3 library. This setup is more for development purposes and testing different configurations of ORB-SLAM3.
