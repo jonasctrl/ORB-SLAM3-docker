@@ -36,10 +36,10 @@ docker run -it --gpus all --env="DISPLAY" \
 
 ### Step 2: Dataset Setup
 
-Navigate to the ORB-SLAM3 directory and download the EuRoC MAV dataset. This dataset is used for testing ORB-SLAM3 with different configurations.
+After setting it up container and starting it, you need to attach to it (quick guide how to do it is below). Navigate to the ORB-SLAM3 directory and download the EuRoC MAV dataset. This dataset is used for testing ORB-SLAM3 with different configurations.
 
 ```bash
-cd /opt/ORB_SLAM3
+cd /opt/orb_slam3
 
 # Create directory for dataset
 mkdir -p Datasets/EuRoc
